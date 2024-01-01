@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Styles from "@/styles/Home.module.css";
+import Image from "next/image";
+import LogoRomance from "@/svgs/logo.svg";
 
 //!Etapas;
 import YourName from "@/components/YourName";
@@ -36,53 +38,44 @@ export default function Home() {
       </Head>
       <main>
         <div className={Styles.divMain}>
+          <Image className={Styles.SvgRomance} src={LogoRomance} alt="Logo_Romance" />
           <div className={Styles.divColor}>
             <div className={Styles.divCircleL}></div>
             <div className={Styles.divCircleR}></div>
             {/* Mensagens */}
+          </div>
+
+          <div className={Styles.divBottom}>
             <div className={Styles.divFormMain}>
-              <p>Etapas</p>
               <form onSubmit={(e) => changeStep(currentStep + 1, e)}>
                 <div className={Styles.inputContainer}>{currentComponent}</div>
-                <div className="actions">
+                {/* <div className={Styles.divArrow}>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                    color="#FFF"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"
+                    />
+                  </svg>
+                </div> */}
+                <div className={Styles.actions}>
                   {!isFirstStep ? (<button type="button" onClick={() => changeStep(currentStep - 1)}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
-                    </svg>
                     <span>Voltar</span>
                   </button>) : (<></>)}
                   {!isLastStep ? (<button type="submit">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" iewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-                    </svg>
                     <span>Continuar</span>
                   </button>) : (<button type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                      <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
-                    </svg>
                     <span>Enviar</span>
                   </button>)}
                 </div>
               </form>
             </div>
-          </div>
-          <div className={Styles.divArrow}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="currentColor"
-              viewBox="0 0 16 16"
-              color="#FFF"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"
-              />
-            </svg>
-          </div>
-          <div className={Styles.divBottom}>
-            {/* Confirm e Voltar */}
           </div>
           <div className={Styles.divProgres}>
             <div className={Styles.divProgresStars}></div>

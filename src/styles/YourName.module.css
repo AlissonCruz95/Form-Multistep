@@ -1,0 +1,103 @@
+/*
+.divMain {
+    border: transparent;
+}
+
+.divTitle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.divTitle h2 {
+    color: #D60078;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.5px;
+}
+
+.divTitle p {
+    width: 25%;
+    margin: 0 10px;
+}
+
+.divMensages {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.divMensageOne {
+    width: 85%;
+    padding: 10px;
+    background-color: #e9e9e9;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.divMensageOne:after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 32px;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: #e9e9e9 transparent;
+    transform: rotate(1deg);
+}
+
+.divMensageOne h3 {
+    width: 70%;
+    flex-shrink: 0;
+    color: #171717;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -1px;
+}
+
+.divMensageTwo {
+    width: 85%;
+    padding: 10px;
+    background-color: #e9e9e9;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.divMensageTwo:after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 280px;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: #e9e9e9 transparent;
+    transform: rotate(1deg);
+}
+
+.divMensageTwo h3 {
+    width: 70%;
+    flex-shrink: 0;
+    color: #171717;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -1px;
+}
+
+.divMensageTwo h3 > span {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+*/

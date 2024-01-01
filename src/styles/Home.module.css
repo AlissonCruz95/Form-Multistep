@@ -19,8 +19,8 @@
     flex-direction: row;
     overflow: hidden;
     border-bottom: solid 2px #D60078;
-    position: relative;
-    z-index: 1;
+    /* position: relative;
+    z-index: 1; */
 }
 
 .divCircleL {
@@ -29,7 +29,7 @@
     flex-shrink: 0;
     border-radius: 263px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #F9D9EB 90%);
-    transform: translate(-135%, 10%);
+    /* transform: translate(-135%, 10%); */
 }
 
 .divCircleR {
@@ -38,8 +38,37 @@
     flex-shrink: 0;
     border-radius: 263px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #F9D9EB 150%);
-    transform: translate(175%, -50%);
+    /* transform: translate(175%, -50%); */
 }
+
+/* .divFormMain {
+    border: solid 1px blue;
+} */
+
+ /* .actions {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.actions button {
+    border: transparent;
+}
+
+.actions button > span {
+    background: #D60078;
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    padding: 13px 120px;
+    border-radius: 14px;
+} */
 
 .divArrow {
     border-radius: 24px;
@@ -49,12 +78,12 @@
     background: #D60078;
     text-align: center;
     border: solid 2px  #FFF2FA;
-    position: absolute;
+    /* position: absolute;
     z-index: 2;
     top: 45%;
     left: 50%; 
     transform: translateX(-50%);
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
 }
 
 .divArrow svg {
@@ -65,8 +94,8 @@
     height: 45%;
     width: 100%;
     background: #fff;
-    position: relative;
-    z-index: 1;
+    /* position: relative;
+    z-index: 1; */
 
 }
 
